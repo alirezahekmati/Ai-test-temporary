@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Synapse - AI Lab Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🧪 Project Synapse</h1>
+        <p>AI Experimental Protocol Generator</p>
+      </header>
+
+      <section id="api-key-section">
+        <h2>Enter API Key</h2>
+        <p>
+          Please enter your Google AI Studio API Key. This key is used
+          <strong>only in your browser</strong> for direct API calls and is not
+          stored.
+        </p>
+        <div class="api-input-group">
+          <input
+            type="password"
+            id="api-key-input"
+            placeholder="Enter your Google AI API Key here"
+          />
+          <button id="submit-api-key">Set Key & Load Data</button>
+        </div>
+        <p id="status-message"></p>
+      </section>
+
+      <section id="chat-interface" style="display: none">
+        <h2>Experiment Planner</h2>
+        <div id="chat-log">
+          <!-- Chat messages will appear here -->
+        </div>
+        <div id="input-area">
+          <textarea
+            id="experiment-input"
+            placeholder="Describe the experiment you want to plan..."
+            rows="4"
+          ></textarea>
+          <button id="send-button" title="Send Experiment Description">
+            Generate Protocol
+          </button>
+        </div>
+        <div id="loading-indicator" class="loading" style="display: none">
+          <div></div>
+          <div></div>
+          <div></div>
+          <!-- Simple CSS Loader -->
+          <span>Processing request...</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- No SDK Import needed for direct fetch -->
+    <script src="script.js"></script>
+    <!-- Use standard script tag -->
+  </body>
+</html>
