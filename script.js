@@ -9,7 +9,7 @@ const sendButton = document.getElementById("send-button");
 const loadingIndicator = document.getElementById("loading-indicator");
 
 // --- Configuration ---
-const modelName = "gemini-1.5-flash-latest"; // Using flash model as requested
+const modelName = "gemini-2.5-flash-preview-04-17"; // Using flash model as requested
 const API_ENDPOINT_BASE =
   "https://generativelanguage.googleapis.com/v1beta/models/";
 
